@@ -1,0 +1,339 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.fundo {
+    background-color:#F6F1F1;
+}
+
+h2 {
+    color: #5768F3;
+    text-align: center;
+}
+
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    color: #5768F3;
+}
+
+.dado {
+    display: flex;
+    align-items: center; 
+}
+
+.porcentagem {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #5768F3;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 0 20px; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.planos {
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    background-color: #DBDBDB;
+    text-align: center;
+    padding: 10px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    background-color: #5768F3;
+    color: white;
+    padding: 15px;
+    position: relative;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: 1%; 
+}
+
+.logo img {
+    height: 40px; 
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    background-color: #5768F3;
+}
+
+ul.active {
+    display: flex; 
+}
+
+ul li {
+    margin: 10px 0; 
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.close-menu {
+    display: none; 
+    color: white; 
+    font-size: 24px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    background-color: #5768F3;
+}
+
+ul.active {
+    display: flex; 
+}
+
+ul.active + .close-menu {
+    display: block; 
+}
+
+ul.active ~ .menu-toggle {
+    display: none; 
+}
+
+.servicos img{
+    width: 85%;
+}
+
+.servicos {
+    align-items: center;
+    text-align: center;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 9%;
+    right: 2%;
+    padding: 10px;
+    background-color: #5769f300;
+    color: #5768F3;
+    border: none;
+    border-radius: 50%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    width: 50px;
+    height: 50px;
+}
+
+.fixed-button.show {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #5768F3;
+}
+
+#segundo{
+    width: 60px;
+    margin-right: 3px !important;
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 20px;
+    }
+    .coluna {
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .coluna1 {
+        order: 1;  
+        flex: 1;  
+        padding: 20px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-left: 40px;
+    }
+
+    .coluna2 {
+        order: 2;  
+        flex: 1;  
+        padding: 20px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-right: 40px;
+    }
+
+    nav {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .logo img {
+        height: 45px; 
+    }
+
+    ul {
+        display: flex; 
+        position: static; 
+        flex-direction: row;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+    
+    .close-menu{
+        display:none;
+    }
+
+    .siganos {
+        margin: 0;
+    }
+
+    .siganos .icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .bem-vindo{
+        align-items: center;
+        text-align: center;
+    }
+
+    .servicos img{
+        width: 75%;
+    }
+    
+    #dados2, .missao{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    main{
+       margin: 0 90px; 
+       padding: 50px;
+    }
+    .copyright{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .colunas {
+        display: flex; 
+    }
+
+    .numero {
+        padding: 20px;
+    }
+
+    .siganos {
+        padding: 20px;
+    }
+    .icons{
+        margin-top: -20px;
+    }
+
+    .fixed-button {
+        position: fixed;
+        bottom: 9%;
+        right: 2%;
+        padding: 10px;
+        background-color: #5768F3;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .fixed-button.show {
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    .arrow-up {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid white;
+    }
+}
+
